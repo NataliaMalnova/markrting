@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+
+  @include media("lp") {
+    max-width: 990px;
+  }
+
+  @include media("mtb") {
+    max-width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include media("md") {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @include media("mb") {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.d-f {
+  display: flex;
+}
+.f-sh {
+  flex-shrink: 0;
+}
+.jc {
+  &-sb {
+    justify-content: space-between;
+  }
+  &-sa {
+    justify-content: space-around;
+  }
+  &-c {
+    justify-content: center;
+  }
+  &-fe {
+    justify-content: flex-end;
+  }
+  &-se {
+    justify-content: space-evenly;
+  }
+}
+.ai {
+  &-c {
+    align-items: center;
+  }
+  &-fe {
+    align-items: flex-end;
+  }
+  &-fs {
+    align-items: flex-start;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

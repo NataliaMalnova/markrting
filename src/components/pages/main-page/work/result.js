@@ -1,0 +1,1 @@
+tabs('tabs-work', '.tabs-title-item', '.tabs-item');

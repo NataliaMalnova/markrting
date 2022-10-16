@@ -1,0 +1,162 @@
+footer {
+  padding-top: 100px;
+  background: #333333;
+
+  @include media("mtb") {
+    padding-top: 60px;
+  }
+  @include media("md") {
+    padding-top: 40px;
+  }
+
+  @include media("mb") {
+    padding-top: 24px;
+  }
+
+  a,
+  p,
+  span,
+  li {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  a {
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  li {
+    line-height: 170%;
+  }
+
+  span {
+    opacity: 0.5;
+  }
+
+  span.footer-title {
+    max-width: 204px;
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .footer-region {
+    margin-top: 56px;
+    margin-bottom: 20px;
+
+    @include media("mtb") {
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
+    @include media("md") {
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-requisites {
+    margin-top: 12px;
+  }
+
+  .footer-social {
+    margin-top: 28px;
+
+    @include media("mtb") {
+      margin-top: 0px;
+    }
+    @include media("md") {
+      margin-top: 16px;
+    }
+
+    a {
+      margin-right: 20px;
+    }
+
+    a:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.footer-row {
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @include media("mtb") {
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  @include media("md") {
+    padding-bottom: 20px;
+  }
+}
+
+.footer-col {
+  @include media("mtb") {
+    width: calc(100% / 3);
+  }
+  @include media("md") {
+    display: none;
+  }
+}
+
+.footer-top {
+  @include media("mtb") {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include media("md") {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-top--col {
+    @include media("mtb") {
+      width: calc(100% / 3);
+    }
+    @include media("md") {
+      width: 100%;
+    }
+  }
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 16px;
+
+  @include media("mb") {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  a,
+  span {
+    font-size: 12px;
+    line-height: 120%;
+    opacity: 0.3;
+  }
+
+  .footer-bottom-link {
+    @include media("md") {
+      flex-direction: column;
+    }
+    a {
+      @include media("md") {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+    }
+    span {
+      @include media("md") {
+        display: none;
+      }
+    }
+  }
+}

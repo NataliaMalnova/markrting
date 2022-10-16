@@ -1,0 +1,89 @@
+include ../../image/image-call.pug
+include ../../image/image-search.pug
+include ../../image/arrow-menu.pug
+header
+    .container  
+        .header.d-f.jc-sb.ai-c
+            .header-logo
+                img(src="images/logo.svg", alt="")
+            p.header-utp Увеличиваем продажи в Вашем бизнесе!
+            .header-contact.d-f.ai-c
+                a(href="tel:+74872792910").header-contact-call +7 (4872) 79-29-10
+                button.btn.btn-primary 
+                    +image-call({})
+                    | Заказать звонок
+                a(href="tel:+74872792910").header-contact-mobile
+                    +image-call({})
+                button.burger.header-burger.flex-column.jc-sb
+                    span.burger__line
+                    span.burger__line
+                    span.burger__line  
+.menu-mobile
+    .container
+        .search-mobile
+            input(type="text" placeholder="Поиск по сайту") 
+        ul.menu-mobile--list
+            li.nav__sub-menu
+                p.nav__sub-menu--title Увеличение продаж
+                    +arrow-menu({})
+                ul.nav__sub-menu--list 
+                    li 
+                        a(href="") Пункт 1
+                            span ХИТ
+                    li 
+                        a(href="") SEO продвижение сайтов в Яндекс
+                    li 
+                        a(href="") Проведение бизнеса в социальных сетях
+                    li 
+                        a(href="") Пункт 4
+
+            li 
+                a(href="#_packages") Создание сайтов
+            li 
+                a(href="#_advantages") Поддержка
+            li 
+                a(href="#_solutions") Битрикс 24
+            li 
+                a(href="#_about") О компании
+            li 
+                a(href="#_reviews") Отзывы
+            li 
+                a(href="#_cases") кейсы
+            li 
+                a(href="#_forms") контакты
+nav     
+    .container
+        .nav.d-f.jc-sb.ai-c
+            ul.nav-list.d-f.jc-sb.ai-c 
+                li.nav__sub-menu
+                    p.nav__sub-menu--title Увеличение продаж
+                        +arrow-menu({})
+                    ul.nav__sub-menu--list 
+                        li 
+                            a(href="") Пункт 1
+                                span ХИТ
+                        li 
+                            a(href="") SEO продвижение сайтов в Яндекс
+                        li 
+                            a(href="") Проведение бизнеса в социальных сетях
+                        li 
+                            a(href="") Пункт 4
+
+                li 
+                    a(href="#_packages") Создание сайтов
+                li 
+                    a(href="#_advantages") Поддержка
+                li 
+                    a(href="#_solutions") Битрикс 24
+                li 
+                    a(href="#_about") О компании
+                li 
+                    a(href="#_reviews") Отзывы
+                li 
+                    a(href="#_cases") кейсы
+                li 
+                    a(href="#_forms") контакты
+            .nav-search
+                +image-search({})
+    .search
+        input(type="text" placeholder="Поиск по сайту") 

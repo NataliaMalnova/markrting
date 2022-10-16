@@ -1,0 +1,223 @@
+.solutions {
+  margin-top: 120px;
+  padding-top: 120px;
+  background: #f8f8f8;
+
+  @include media("mtb") {
+    margin-top: 80px;
+    padding-top: 80px;
+  }
+
+  @include media("md") {
+    margin-top: 60px;
+    padding-top: 60px;
+  }
+
+  @include media("mb") {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+}
+
+.solutions-row {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 60px;
+  @include media("lp") {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  @media (max-width: 1026px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include media("mtb") {
+    margin-top: 40px;
+  }
+  @include media("md") {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.solutions-col {
+  width: calc(100% / 3);
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include media("lp") {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include media("mtb") {
+    width: 50%;
+  }
+  @include media("md") {
+    width: 100%;
+    margin-bottom: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.solution {
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  min-height: 504px;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+
+  @include media("lp") {
+    min-height: 540px;
+  }
+
+  @include media("mtb") {
+    min-height: 500px;
+  }
+
+  @include media("mb") {
+    min-height: auto;
+  }
+
+  &-image {
+    width: 100%;
+    height: 117px;
+  }
+
+  &-content {
+    padding: 34px 24px 0px 24px;
+    @include media("mb") {
+      padding: 16px 12px 0px 12px;
+    }
+
+    h3 {
+      text-align: center;
+      min-height: 51px;
+
+      @include media("lp") {
+        min-height: 45px;
+      }
+
+      @include media("mb") {
+        min-height: auto;
+      }
+    }
+
+    p.text-small {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      opacity: 0.5;
+      text-align: center;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+      min-height: 100px;
+
+      @include media("mb") {
+        min-height: auto;
+      }
+    }
+  }
+
+  &-price {
+    margin-top: 24px;
+
+    svg {
+      width: 39px;
+      height: 39px;
+      margin-right: 12px;
+      opacity: 0.3;
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 140%;
+      color: #ff5900;
+    }
+  }
+
+  &-discont {
+    margin-top: 10px;
+
+    p {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 39px;
+      height: 39px;
+      margin-right: 12px;
+      opacity: 0.3;
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .solution-discont--old {
+      display: block;
+      opacity: 0.5;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: line-through;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &-more {
+    margin-left: auto;
+    margin-right: 0;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @include media("mb") {
+      margin-top: 16px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    a {
+      font-weight: 600;
+      text-transform: none;
+      color: #ff5900;
+    }
+
+    svg {
+      margin-left: 8px;
+    }
+  }
+}
+
+.solutions-col:nth-child(n + 4) {
+  margin-top: 40px;
+}
+
+.solutions-col:nth-child(n + 3) {
+  @include media("mtb") {
+    margin-top: 24px;
+  }
+
+  @include media("mb") {
+    margin-top: 16px;
+  }
+}
+
+.solutions-col:nth-child(n + 2) {
+  @include media("mb") {
+    margin-top: 16px;
+  }
+}

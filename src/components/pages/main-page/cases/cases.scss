@@ -1,0 +1,119 @@
+.cases {
+  margin-top: 120px;
+
+  @include media("mtb") {
+    margin-top: 80px;
+  }
+
+  @include media("md") {
+    margin-top: 60px;
+  }
+
+  @include media("mb") {
+    margin-top: 40px;
+  }
+}
+
+.cases-slider {
+  width: 100%;
+  margin-top: 60px;
+
+  .swiper-wrapper {
+    padding-bottom: 40px;
+  }
+}
+
+.cases-card {
+  background: #f4f4f4;
+  padding: 40px;
+  @include media("mb") {
+    padding: 16px;
+  }
+
+  &__top {
+    width: 100%;
+
+    img {
+      display: flex;
+      flex-shrink: 0;
+
+      @include media("mb") {
+        width: 70px;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 751px;
+
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: 30px;
+    @include media("mb") {
+      flex-direction: column;
+      margin-top: 16px;
+    }
+  }
+
+  &__goal {
+    width: 50%;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    padding-right: 30px;
+
+    @include media("mb") {
+      width: 100%;
+      border-right: none;
+      padding-right: 0px;
+    }
+
+    p.title {
+      font-weight: 700;
+      color: #333333;
+      opacity: 0.5;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    ul li {
+      list-style: disc;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__result {
+    width: 50%;
+    padding-left: 30px;
+
+    @include media("mb") {
+      width: 100%;
+      padding-left: 0px;
+      margin-top: 16px;
+    }
+
+    p.title {
+      font-weight: 700;
+      color: #333333;
+      opacity: 0.5;
+      margin-bottom: 12px;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+      color: #ff5900;
+    }
+    span.big {
+      font-size: 38px;
+    }
+  }
+}

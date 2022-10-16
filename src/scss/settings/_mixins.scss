@@ -1,0 +1,40 @@
+@use "sass:meta";
+@use "sass:math";
+
+@mixin media($size) {
+  @if $size== "lp" {
+    @media (max-width: $media-laptop) {
+      @content;
+    }
+  }
+
+  @if $size== "tb" {
+    @media (max-width: $media-tab) {
+      @content;
+    }
+  }
+
+  @if $size== "mtb" {
+    @media (max-width: $media-min-tab) {
+      @content;
+    }
+  }
+
+  @if $size== "md" {
+    @media (max-width: $media-middle) {
+      @content;
+    }
+  }
+
+  @if $size== "mb" {
+    @media (max-width: $media-mobile) {
+      @content;
+    }
+  }
+
+  @if $size== "lt" {
+    @media (max-width: $media-little) {
+      @content;
+    }
+  }
+}

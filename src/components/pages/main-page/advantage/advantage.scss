@@ -1,0 +1,84 @@
+.advantages {
+  margin-top: 120px;
+
+  @include media("mtb") {
+    margin-top: 80px;
+  }
+
+  @include media("md") {
+    margin-top: 60px;
+  }
+
+  @include media("mb") {
+    margin-top: 40px;
+  }
+}
+
+.advantage-row {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 60px;
+  @include media("lp") {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  @media (max-width: 1026px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include media("mtb") {
+    margin-top: 40px;
+  }
+}
+
+.advantage-col {
+  width: calc(100% / 3);
+
+  @include media("mtb") {
+    width: 50%;
+  }
+}
+
+.advantage {
+  img {
+    width: 70px;
+    height: 70px;
+
+    @include media("mtb") {
+      width: 55px;
+      height: 55px;
+    }
+
+    @include media("mb") {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  p {
+    color: #333333;
+    margin-top: 16px;
+    text-align: center;
+    @include media("mtb") {
+      font-size: 14px;
+    }
+
+    @include media("mb") {
+      font-size: 13px;
+      margin-top: 8px;
+    }
+  }
+}
+
+.advantage-col:nth-child(n + 4) {
+  margin-top: 40px;
+}
+
+.advantage-col:nth-child(n + 3) {
+  @include media("mtb") {
+    margin-top: 24px;
+  }
+}

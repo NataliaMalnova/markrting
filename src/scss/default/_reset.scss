@@ -1,0 +1,198 @@
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+span,
+ul,
+ol,
+li {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+  color: #212121;
+  line-height: 140%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 110%;
+
+  @include media("mtb") {
+    font-size: 58px;
+  }
+
+  @include media("md") {
+    font-size: 46px;
+  }
+
+  @include media("mb") {
+    font-size: 40px;
+  }
+
+  @include media("lt") {
+    font-size: 35px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 120%;
+
+  @include media("mtb") {
+    font-size: 32px;
+  }
+
+  @include media("md") {
+    font-size: 26px;
+  }
+
+  @include media("mb") {
+    font-size: 24px;
+  }
+
+  @include media("lt") {
+    font-size: 22px;
+  }
+
+  span {
+    color: #ff5900;
+    font-weight: 700;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  @include media("lp") {
+    font-size: 16px;
+  }
+
+  @include media("mb") {
+  }
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.text-small {
+  font-weight: 500;
+  font-size: 14px;
+}

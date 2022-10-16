@@ -1,0 +1,11 @@
+.forms(style='background:url("images/form.png") no-repeat top / cover')#_forms
+    .container
+        h2 Найдем клиентов в Интернете для Вас
+        p.forms-utp Для заказа стратегии продвижения в Москве или другом городе просто заполни заявку или закажи обратный звонок. Менеджер по работе с клиентами выйдет на связь и подготовит персональное коммерческое предложение, составленное с учетом желаемых целей и возможностей.
+        form(action="").form.d-f.flex-column
+            input(type="text" placeholder="Имя").form-input
+            input(type="email" placeholder="E-mail").form-input
+            .form-checkbox.d-f
+                input(type="checkbox" id="vehicle1" name="vehicle1" value="Bike")
+                label(for="vehicle1") Я даю свое согласие на обработку персональных данных
+            button.btn.btn-secondary Отправить заявку

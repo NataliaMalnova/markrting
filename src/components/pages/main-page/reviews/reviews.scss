@@ -1,0 +1,78 @@
+.reviews {
+  margin-top: 120px;
+
+  @include media("mtb") {
+    margin-top: 80px;
+  }
+
+  @include media("md") {
+    margin-top: 60px;
+  }
+
+  @include media("mb") {
+    margin-top: 40px;
+  }
+}
+
+.reviews-btn {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.reviews-slider {
+  margin-top: 56px;
+  position: relative;
+  .swiper-slide {
+    background: #f4f4f4;
+    height: 420px;
+    width: 100%;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: -86px;
+
+    @media (max-width: 1390px) {
+      right: -60px;
+    }
+
+    @media (max-width: 1336px) {
+      right: 10px;
+    }
+
+    @media (max-width: 1280px) {
+      right: -60px;
+    }
+
+    @media (max-width: 1128px) {
+      right: 10px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: -86px;
+    @media (max-width: 1390px) {
+      left: -60px;
+    }
+
+    @media (max-width: 1336px) {
+      left: 10px;
+    }
+
+    @media (max-width: 1280px) {
+      left: -60px;
+    }
+
+    @media (max-width: 1128px) {
+      left: 10px;
+    }
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}

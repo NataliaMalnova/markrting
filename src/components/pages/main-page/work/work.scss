@@ -1,0 +1,97 @@
+.work {
+  margin-top: 120px;
+
+  @include media("mtb") {
+    margin-top: 80px;
+  }
+
+  @include media("md") {
+    margin-top: 60px;
+  }
+
+  @include media("mb") {
+    margin-top: 40px;
+  }
+}
+
+#tabs-work {
+  .tabs-title p.active {
+    background: #ff5900;
+  }
+
+  .tabs-content {
+    background: #fff;
+  }
+
+  .tabs-item {
+    background: #fff;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    padding: 0;
+
+    p {
+      color: #212121;
+      text-align: left;
+      max-width: 100%;
+    }
+
+    a {
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-top: 12px;
+    }
+
+    ul li {
+      list-style: disc;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .tabs-item__work-text {
+      padding: 40px;
+      padding-bottom: 50px;
+
+      @include media("md") {
+        padding: 24px;
+      }
+      @include media("mb") {
+        padding: 16px;
+      }
+    }
+  }
+
+  .tabs-item__work {
+    height: 100%;
+  }
+
+  .tabs-item__work-image {
+    height: 100%;
+    width: 480px;
+    display: flex;
+    flex-shrink: 0;
+
+    @include media("lp") {
+      width: 402px;
+    }
+
+    @include media("mtb") {
+      display: none;
+    }
+  }
+
+  .tabs-title p:nth-child(4),
+  .tabs-title p:nth-child(5) {
+    @include media("md") {
+      width: 50%;
+    }
+  }
+
+  .tabs-title p:nth-child(5) {
+    @include media("lt") {
+      width: 100%;
+    }
+  }
+}

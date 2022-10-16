@@ -1,0 +1,76 @@
+.clients {
+  margin-top: 120px;
+
+  @include media("mtb") {
+    margin-top: 80px;
+  }
+
+  @include media("md") {
+    margin-top: 60px;
+  }
+
+  @include media("mb") {
+    margin-top: 40px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+.clients-row {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 60px;
+  @include media("lp") {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  @media (max-width: 1026px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include media("mtb") {
+    margin-top: 40px;
+  }
+}
+
+.clients-col {
+  width: calc(100% / 4);
+  padding-left: 30px;
+  padding-right: 30px;
+  @include media("lp") {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include media("mtb") {
+    width: calc(100% / 3);
+  }
+
+  @include media("mb") {
+    width: 50%;
+  }
+}
+
+.clients-col:nth-child(n + 5) {
+  margin-top: 30px;
+}
+
+.clients-col:nth-child(n + 4) {
+  @include media("mtb") {
+    margin-top: 24px;
+  }
+}
+
+.clients-col:nth-child(n + 3) {
+  @include media("mb") {
+    margin-top: 12px;
+  }
+}
